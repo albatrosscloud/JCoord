@@ -3,12 +3,11 @@ package uk.me.jstott.jcoord.junit;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
-
 /**
  * <p>
  * Jcoord unit test suite.
  * </p>
- * 
+ *
  * <p>
  * (c) 2006 Jonathan Stott
  * </p>
@@ -23,22 +22,21 @@ import junit.framework.TestSuite;
  */
 public class AllTests {
 
-  public static void main(String[] args) {
-    junit.textui.TestRunner.run(suite());
-  }
+    public static void main(String[] args) {
+        junit.textui.TestRunner.run(suite());
+    }
 
-
-  public static Test suite() {
-    TestSuite suite = new TestSuite("Test for uk.me.jstott.jcoord");
-    //$JUnit-BEGIN$
-    suite.addTestSuite(MGRSRefTest.class);
-    suite.addTestSuite(LatLngTest.class);
-    suite.addTestSuite(UTMRefTest.class);
-    suite.addTestSuite(ECEFRefTest.class);
-    suite.addTestSuite(IrishRefTest.class);
-    suite.addTestSuite(OSRefTest.class);
-    //$JUnit-END$
-    return suite;
-  }
+    public static Test suite() {
+        TestSuite suite = new TestSuite("Test for uk.me.jstott.jcoord");
+        //$JUnit-BEGIN$
+        suite.addTestSuite(MGRSRefTest.class);
+        suite.addTestSuite(LatLngTest.class);
+        suite.addTestSuite(UTMRefTest.class);
+        suite.addTestSuite(ECEFRefTest.class);
+        suite.addTestSuite(IrishRefTest.class);
+        suite.addTestSuite(OSRefTest.class);
+        //$JUnit-END$
+        return suite;
+    }
 
 }
